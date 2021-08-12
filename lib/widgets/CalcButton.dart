@@ -24,10 +24,13 @@ class CalcButton extends StatelessWidget {
       child: SizedBox(
         width: 65,
         height: 65,
+        // ignore: deprecated_member_use
         child: FlatButton(
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(50.0),
+            // change radius to 50
+            borderRadius: BorderRadius.circular(10.0),
           ),
+          // event handlers
           onPressed: () {
             callback(text);
           },
